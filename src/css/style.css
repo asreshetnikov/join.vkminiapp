@@ -1,0 +1,369 @@
+@font-face {
+    font-family: 'robo-b';
+    src: local('robo-b'), url(../assets/fonts/Roboto-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'robo-r';
+    src: local('robo-r'), url(../assets/fonts/Roboto-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'robo-m';
+    src: local('robo-m'), url(../assets/fonts/Roboto-Medium.ttf) format('truetype');
+}
+
+.MatchItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    height: 50px;
+    /* border: 1px;
+    border-color: red;
+    background-color: red; */
+}
+.MatchInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    flex: 1;
+    /* height: 100px; */
+    /* border: 1px;
+    border-color: red;
+    background-color: red; */
+}
+.MatchItemDate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    height: 30px;
+    /* border: 1px;
+    border-color: red;
+    background-color: red; */
+}
+.MatchInfoDate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    /* height: 30px; */
+    /* border: 1px;
+    border-color: red;
+    background-color: red; */
+}
+.MatchInfoDetails {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.MatchItemText {
+    /* display: block; */
+    align-items: center;
+    justify-content: center;
+    /* padding: 100px;
+    border: 1px;
+    border-color: red;
+    background-color: red; */
+}
+.MatchItemLogoCircle {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    /* border-color: red; */
+    border: 1px solid #eee;
+    /* border-width: 5px; */
+    /* padding: 5px; */
+    margin: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 50%;
+    /* height: 20px; */
+    max-width: 35px;
+    /* background-color: #ccc; */
+}
+.TableRowItemLogoCircle {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    /* border-color: red; */
+    border: 1px solid #eee;
+    /* border-width: 5px; */
+    /* padding: 5px; */
+    margin: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 50%;
+    /* height: 20px; */
+    max-width: 35px;
+    /* background-color: #ccc; */
+}
+.MatchItemLogo {
+    display: block;
+    border-radius: 20px;
+    /* padding: 20px; */
+    width: 35px;
+    height: 35px;
+    max-width: 35px;
+    /* margin: 20px auto; */
+}
+.TableRowItemLogo {
+    display: block;
+    border-radius: 20px;
+    /* padding: 20px; */
+    width: 35px;
+    height: 35px;
+    max-width: 35px;
+    /* margin: 20px auto; */
+}
+.TeamInfoItemLogo {
+    display: block;
+    border-radius: 35px;
+    /* padding: 20px; */
+    width: 70px;
+    height: 70px;
+    max-width: 70px;
+    /* margin: 20px auto; */
+}
+.TeamInfoItemLogoCircle {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    /* border-color: red; */
+    border: 1px solid #eee;
+    /* border-width: 5px; */
+    /* padding: 5px; */
+    margin: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 50%;
+    /* height: 20px; */
+    max-width: 70px;
+    /* background-color: #ccc; */
+}
+.MatchInfoLogoCircle {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    /* border-color: red; */
+    border: 1px solid #eee;
+    /* border-width: 5px; */
+    /* padding: 5px; */
+    margin: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    /* height: 20px; */
+    max-width: 70px;
+    /* background-color: #ccc; */
+}
+.MatchInfoLogo {
+    display: block;
+    border-radius: 50px;
+    /* padding: 20px; */
+    width: 70px;
+    height: 70px;
+    max-width: 70px;
+    /* margin: 20px auto; */
+}
+.MatchItemTeamBlock {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    /* justify-content: flex-end;
+    align-items: flex-end; */
+}
+.MatchInfoTeamBlock {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    /* justify-content: flex-end;
+    align-items: flex-end; */
+}
+.Host {
+    padding-right: 0px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Guest {
+    padding-left: 0px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.wrapper {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    overflow: auto;
+    overflow-y: hidden;
+    /* padding-bottom: 50px; */
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    /* background-color: rgba(255, 255, 255, 0.25); */
+    white-space: nowrap;
+    /* display:inline-block; */
+}
+.Tournament-Calendar-Header {
+    display: flex;
+    /* background-color: rgb(238, 238, 238); */
+    flex-direction: row;
+    padding: 0px;
+}
+.directionRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.matchInfoTeamNameBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    /* align-self: center; */
+    /* width: '50%'; */
+}
+.matchInfoTeamNameBlockSingle {
+    display: flex;
+    width: 100pc;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(238, 238, 238); */
+}
+.MatchEventItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+.MatchEventItemRow {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding: 0;
+    /* justify-content: center;
+    align-items: center; */
+}
+.ButtonBorderLightGray {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    color: #999;
+    width: 100%;
+    height: 20px;
+    white-space: nowrap;
+    padding: 5px 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.ButtonBorderLightGrayHeader {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    color: #999;
+    /* width: 100%;
+    height: 20px; */
+    white-space: nowrap;
+    padding: 5px 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.ButtonBorderLightGrayNotSelected {
+    /* border: 1px solid #eee; */
+    /* border-radius: 5px; */
+    color: #999;
+    width: 100%;
+    height: 20px;
+    white-space: nowrap;
+    padding: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* background-color: #eee; */
+}
+.ButtonBorderLightGraySelected {
+    /* border: 1px solid #eee; */
+    border-radius: 5px;
+    color: #999;
+    width: 100%;
+    height: 20px;
+    white-space: nowrap;
+    padding: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #eee;
+}
+.StatButtonBorderLightGrayNotSelected {
+    /* border: 1px solid #eee; */
+    /* border-radius: 5px; */
+    color: #999;
+    /* width: 100%; */
+    height: 20px;
+    white-space: nowrap;
+    padding: 3px;
+    /* margin-left: 5px; */
+    /* margin-right: 5px; */
+    /* background-color: #eee; */
+}
+.StatButtonBorderLightGraySelected {
+    /* border: 1px solid #eee; */
+    border-radius: 5px;
+    color: #999;
+    /* width: 100%; */
+    height: 20px;
+    white-space: nowrap;
+    padding: 3px;
+    /* margin-left: 5px; */
+    /* margin-right: 5px; */
+    background-color: #eee;
+}
+.View__panel {
+    height: auto;
+}
+.MatchSquadTeamButtonLogoCircle {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    /* border-color: red; */
+    border: 1px solid #eee;
+    /* border-width: 5px; */
+    /* padding: 5px; */
+    margin: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    /* height: 20px; */
+    max-width: 70px;
+    /* background-color: #ccc; */
+}
+.MatchSquadTeamButtonLogo {
+    display: block;
+    border-radius: 10px;
+    /* padding: 20px; */
+    width: 15px;
+    height: 15px;
+    max-width: 15px;
+    /* margin: 20px auto; */
+}
+.VerticalLine {
+    border-left: 1px solid #eee;
+}
+.StatLine1 {
+    font-family: 'robo-r';
+    font-size: 14px;
+}
+div.Separator__in {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
